@@ -1,0 +1,79 @@
+.store-name {
+    font-weight: bold;
+    color: #fff;
+}
+.home{
+    color:#fff;
+    text-decoration: none;
+}
+
+.partner-section {
+    color: white;
+    font-weight: bold;
+}
+
+body {
+    background-image: url("b3.png");
+    background-size: cover;
+    background-position: relative;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /* background-color: #f1f1f1; */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.store-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.partner-section {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    margin-top: 5px;
+    padding: 5px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

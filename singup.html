@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script type='text/javascript'>
+function formValidator()
+{
+// Make quick references to our fields
+var email = document.getElementById('email');
+var password = document.getElementById('password');
+if(emailValidator(email, "Please enter a valid email address")){
+if(lengthRestriction(password, 6)){
+if(isAlphanumeric(password, "please enter Numbers and Letters Only for password")){
+return true;
+}
+} 
+}
+return false;
+}
+function isAlphanumeric(elem, helperMsg){
+var alphaExp = /^[0-9a-zA-Z]+$/;
+if(elem.value.match(alphaExp)){
+return true;
+}else{
+alert(helperMsg);
+elem.focus();
+return false;
+}
+}
+
+function emailValidator(elem, helperMsg)
+{
+
+var emailExp = /^o19+[0-9]+@rguktong.ac.in$/;
+if(elem.value.match(emailExp))
+{
+return true;
+}
+else{
+alert(helperMsg);
+elem.focus();
+return false;
+}
+}
+function lengthRestriction1(elem, min, max)
+{
+var uInput = elem.value;
+if(uInput.length >= min && uInput.length <= max)
+{
+return true;
+}
+else {
+alert("Please enter 10 numbers only");
+elem.focus();
+return false;
+}
+}
+</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+    <title>signin-signup</title>
+</head>
+<body>
+    <div class="container">
+        <div class="signin-signup">
+            <form  onsubmit='return formValidator()'  action="connect3.php" class="sign-in-form" method="post" >
+            <h2 class="title">Sign in</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username" name="username">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" name="password">
+                </div>
+            <a href="index.html"><input type="submit" value="Login" class="btn"></a>
+                <p class="social-text">Or Sign in with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2">Sign up</a></p>
+            </form>
+            <form onsubmit='return formValidator()'  action="connect2.php" class="sign-up-form" method="post">
+                <h2 class="title">Sign up</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username" name="username">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="Email" name="email">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" name="password">
+                </div>
+                <input type="submit" value="Sign up" class="btn">
+                <p class="social-text">Or Sign in with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">Already have an account? <a href="#" id="sign-in-btn2">Sign in</a></p>
+            </form>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                   <h3>New to E-Store?</h3>
+                    <p>E store where u can buy and sell engineering products📚️...If u cant stop thinking about it..lets buy it..✨️</p>
+                    <button class="btn" id="sign-in-btn">Sign in</button>
+                </div>
+                <img src="image1.png" alt="" class="image">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                        <h3>Do u wanna join with us?..✨️</h3>
+                    <p>just sign up ..let's have a bright shopping..</p>
+                    <button class="btn" id="sign-up-btn">Sign up</button>
+                </div>
+                <img src="image2.png" alt="" class="image">
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ 	<head>
+ 		<!-- Meta Tags -->
+		<meta charset="UTF-8">
+		<meta name="author" content="Kamran Mubarik">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Title -->
+ 		<title>RGUKT E-store</title>
+ 		<!-- Style Sheet -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<!-- Javascript -->	
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+  		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  		<script>		   
+		    $( function() {
+			    $( "#slider-range" ).slider({
+			      range: true,
+			      min: 0,
+			      max: 1000,
+			      values: [ 200, 300 ],
+			      slide: function( event, ui ) {
+			        $( "#amount" ).val( "Rs." + ui.values[ 0 ] + " - Rs." + ui.values[ 1 ] );
+			      }
+			    });
+			    $( "#amount" ).val( "Rs." + $( "#slider-range" ).slider( "values", 0 ) +
+			      " - Rs." + $( "#slider-range" ).slider( "values", 1 ) );
+			});
+		 </script>
+ 	</head>
+<body>
+
+	<header>
+		<div class="container">
+			<div class="brand">
+				<div class="logo">
+					<a href="index.html">
+						<img src="img/icons/online_shopping.png">
+						<div class="logo-text">
+							<p class="big-logo">RGUKT</p>
+							<p class="small-logo">E-store</p>
+						</div>
+					</a>
+				</div> <!-- logo -->
+				
+			</div> <!-- brand -->
+
+			<div class="menu-bar">
+				<div class="menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="shop.html">Shop</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="partner.html">Partner</a></li>
+					</ul>
+				</div>
+			</div> <!-- menu -->
+		</div> <!-- container -->
+	</header> <!-- header -->
+
+	<div class="container">
+		<main>
+			<div class="breadcrumb">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li> / </li>
+					<li>Shop</li>
+				</ul>
+			</div> <!-- End of Breadcrumb-->
+
+			<div class="new-product-section shop">
+				<div class="sidebar">
+					<div class="sidebar-widget">
+						<h3>Category</h3>
+						<ul>
+							<li><a href="engineering.html">GATE BOOKS</a></li>
+							<li><a href="">ENGINEERING BOOKS</a></li>
+							<li><a href="">ELECTRONIC GADGETS</a></li>
+							<li><a href="">CIVIL GADGETS</a></li>
+							<li><a href="">MORE...</a></li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="product-content">
+					<div class="product">
+						<a href="product.html">
+							<img src="img/product/image1.jpeg">
+						</a>
+						<div class="product-detail">
+							<h3>GATE BOOKS</h3>
+							<h2>GATE BOOK 2023</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.250/-</p>
+						</div>						
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="img/product/image2.jpeg">
+						</a>
+						<div class="product-detail">
+							<h3>ENGINEERING BOOKS</h3>
+							<h2>COMPUTER ORGANIZATION AND ARCHITECTURE</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.200/-</p>
+						</div>
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="img/product/image55.jpeg">
+						</a>
+						<div class="product-detail">
+							<h3>ELECTRONIC GADGETS</h3>
+							<h2>CASIO</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.400/-</p>
+						</div>
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="img/product/draf2.jpeg">
+						</a>
+						<div class="product-detail">
+							<h3>CIVIL GADGETS</h3>
+							<h2>DRAFTER</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.320/-</p>
+						</div>
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="img/product/image6.jpeg">
+						</a>
+						<div class="product-detail">
+							<h3>GATE BOOKS</h3>
+							<h2>GATE BOOK 2022</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.120/-</p>
+						</div>
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="img/product/image7.jpeg">
+						</a>
+						<div class="product-detail">
+							<h3>ENGINEERING BOOKS</h3>
+							<h2>COMPUTER NETWORKS</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.380/-</p>
+						</div>
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="img/product/image3.jpeg">
+						</a>
+						<div class="product-detail">
+							<h3>CIVIL GADGETS</h3>
+							<h2>SCALES</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.35/-</p>
+						</div>
+					</div>
+					<div class="product">
+						<a href="product.html">
+							<img src="img/product/oper2.jpeg">
+						</a>
+						<div class="product-detail">
+							<h3>ENGINEERING BOOKS</h3>
+							<h2>OPERATING SYSTEM</h2>
+							<a href="#">Add to Cart</a>
+							<p>Rs.520/-</p>
+						</div>
+					</div>
+				</div>				
+			</div> <!-- New Product Section -->	
+			<div class="load-more">
+				<a href="#">Load More</a>
+			</div>		
+		</main> <!-- Main Area -->
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="footer-widget">
+				<div class="widget">
+					<div class="widget-heading">
+						<h3>Important Link</h3>
+					</div>
+					<div class="widget-content">
+						<ul>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="refund.html">Refund Policy</a></li>
+							<li><a href="terms.html">Terms & Conditions</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="widget">
+					<div class="widget-heading">
+						<h3>Information</h3>
+					</div>
+					<div class="widget-content">
+						<ul>
+							<li><a href="cart.html">Cart</a></li>
+							<li><a href="checkout.html">Checkout</a></li>
+							<li><a href="terms.html">Terms & Conditions</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="widget">
+					<div class="widget-heading">
+						<h3>Follow us</h3>
+					</div>
+					<div class="widget-content">
+						<div class="follow">
+							<ul>
+								<li><a href="#"><img src="img/icons/facebook.png"></a></li>
+								<li><a href="#"><img src="img/icons/twitter.png"></a></li>
+								<li><a href="#"><img src="img/icons/instagram.png"></a></li>
+							</ul>
+						</div>						
+					</div>
+					<div class="widget-heading">
+						<h3>Subscribe for Newsletter</h3>
+					</div>
+					<div class="widget-content">
+						<div class="subscribe">
+							<form>
+								<div class="form-group">
+									<input type="text" class="form-control" name="subscribe" placeholder="Email">
+									<img src="img/icons/paper_plane.png">
+								</div>
+							</form>
+						</div>						
+					</div>
+				</div>
+			</div> <!-- Footer Widget -->
+			<div class="footer-bar">
+				<div class="copyright-text">
+					<p>RGUKT-ESTORE</p>
+				</div>
+			</div> <!-- Footer Bar -->
+		</div>
+	</footer> <!-- Footer Area -->
+
+</body>
+
+</html>
